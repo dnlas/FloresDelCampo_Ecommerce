@@ -1,4 +1,4 @@
-# Ecommerce
+# ECCOMERCE PARA VENTAS ONLINE Y GESTION DE CLIENTES
 
 Proyecto realizado para tener un ecommerce con django.
 
