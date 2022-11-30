@@ -1,24 +1,27 @@
 {% extends 'core/base.html' %}
 
-{% block title %}Welcome{% endblock %}
+{% block title %}Bienvenido a{% endblock %}
 
 {% block content %}
-<header class="bg-purple-500 grid grid-cols-2">
-    <div>
+<header class=" items-center bg-slate-200 grid grid-cols-4 justify-items-center">
+    <div class="margin-top 90 col-span-2 font-serif text-2xl">
         <p>Envia un Regalo Ahora, en Santiago </p>
+        <a href="#ventas" class="py-2 px-2 rounded-xl text-white bg-purple-500 hover:bg-purple-700">Comprar</a>        
     </div>
     
-    <div>
-        <img src="/imagenes/mama.jpg" alt="">
+    <div class="col-span-2">
+        <img src="/media/uploads/mama.jpg" alt="">
+        
     </div>
 
 </header>
 
-<div class="max-w-6xl mx-auto py-2 px-6 xl:px-0">
+<div id='ventas' class="max-w-6xl mx-auto py-2 px-6 xl:px-0">
     <div class="products flex items-center flex-wrap">
         {% for product in products %}
             {% include 'product/partials/product_list_item.html' %}
         {% endfor %}
     </div>
 </div>
+
 {% endblock %}
